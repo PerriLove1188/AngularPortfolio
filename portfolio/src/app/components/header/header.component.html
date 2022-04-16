@@ -1,0 +1,73 @@
+<div class="header-container">
+    <!-- PROJECTS BUTTON  -->
+  <div class="header-child left">
+    <button
+      class="menu-button"
+      mat-button
+      [matMenuTriggerFor]="projects"
+      disableRipple="true"
+    >
+      PROJECTS
+    </button>
+    <!-- PROJECTS ITEMS -->
+    <mat-menu #projects="matMenu">
+      <button class="menu-item" mat-menu-item disableRipple="true">
+        <fa-icon [icon]="faAngular" size="lg"></fa-icon>
+        ANGULAR 10
+      </button>
+
+      <button class="menu-item" mat-menu-item disableRipple="true">
+        <fa-icon [icon]="faJava" size="lg"></fa-icon>
+        SPRING BOOT
+      </button>
+    </mat-menu>
+
+
+    <!-- ABOUT BUTTON -->
+    <button class="menu-button" mat-button ripple disableRipple="true">ABOUT</button>
+
+    <!-- CONTACT BUTTON  -->
+    <button class="menu-button" mat-button ripple disableRipple="true">CONTACT ME</button>
+
+  </div>
+    <!-- LINKED IN ICON/BUTTON -->
+<div class="header-child right">
+    <button
+    class="socials"
+    mat-button
+    disableRipple="true"
+    >
+    <a (click)="openLink('www.linkedin.com/in/perri-love')">
+      <fa-icon
+        [icon]="faLinkedin"
+        [styles]="{ stroke: '#D49888', color: '#D49888' }"
+        size="2x"
+      >
+      </fa-icon>
+    </a>
+    </button>
+
+<!-- INSTAGRAM ICON/BUTTON -->
+    <button class="socials" mat-button disableRipple="true">
+      <a (click)="openLink('www.instagram.com/perrialove/')">
+      <fa-icon
+        [icon]="faInstagram"
+        [styles]="{ stroke: '#D49888', color: '#D49888' }"
+        size="2x"
+      ></fa-icon>
+    </a>
+    </button>
+
+<!-- GITHUB ICON/BUTTON -->
+    <button class="socials" mat-button disableRipple="true">
+      <a (click)="openLink('github.com/PerriLove1188')">
+      <fa-icon
+        [icon]="faGithub"
+        [styles]="{ stroke: '#D49888', color: '#D49888' }"
+        size="2x"
+      ></fa-icon>
+    </a>
+    </button>
+
+  </div>
+  </div>
