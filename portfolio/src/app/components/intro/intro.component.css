@@ -20,7 +20,7 @@
   opacity: 1;
 }
 
-.intro-container__title {
+.intro-container .title {
   font-size: 6em;
   color: #D49888;
   font-family: 'Whisper', cursive;
@@ -30,11 +30,11 @@
   transition: all .2s ease-in-out;
   text-align: left;
 }
-.intro-container__subtitle {
+.intro-container .subtitle {
   display: block;
 }
 
-.short-bio {
+.intro-container .short-bio {
   padding-right: 1em;
   margin-right: 2em;
   color: #c8d8e4;
@@ -46,37 +46,55 @@
 
 .personal-photo-container {
   margin-top: -65px;
+  padding: 30px;
 }
 
-.photo {
+.personal-photo-container .photo {
   width: 450px;
   height: 450px;
-  border-radius: 8px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1000;
 }
 
 .square {
-  left: -135px;
-  top: -60px;
   display: block;
   opacity: 1;
   transform: scale3d(.8, .8, .8);
   position: absolute;
   width: 135px;
   height: 135px;
-  border-radius: 20px;
+  border-radius: 25px;
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
 
-.square:first-child {
-  background: linear-gradient(323.93deg,rgba(10,185,149,.7) -32.24%,rgba(10,185,149,0) 57.93%),#dacdff;
+.personal-photo-container .square:nth-child(2){
+  left: 70em;
+  top: 12em;
+  background: linear-gradient(252deg, rgba(82,171,152,1) 59%, rgba(200,216,228,1) 100%);
+
 }
-.square:nth-child(2) {
-  background: linear-gradient(331.16deg,#f8c6ff -19.15%,rgba(255,196,255,0) 55.74%),#ffeec4;
+.personal-photo-container .square:nth-child(3) {
+  right: 14.5em;
+  top: 12em;
+  background: linear-gradient(132deg, rgba(238,174,202,1) 0%, rgba(212,152,136,1) 100%);
 }
-.square:nth-child(3) {
-  background: linear-gradient(180.1deg,#142c69 -59.06%,rgba(20,44,105,0) 65.9%),#008081;;
+.personal-photo-container .square:nth-child(4) {
+  right: 14.5em;
+  bottom: 9em;
+  background: linear-gradient(126deg, rgba(173,84,103,1) 32%, rgba(242,242,242,1) 100%);;
 }
-.square:nth-child(4) {
-  background: linear-gradient(5.85deg,#dacdff -39.75%,rgba(218,205,255,0) 61.37%),#ffeaee;
+.personal-photo-container .square:nth-child(5) {
+  right: 56.5em;
+  bottom: 9em;
+  background: linear-gradient(126deg, rgba(64,169,197,1) 45%, rgba(242,242,242,1) 100%);
+}
+.personal-photo-container .square:nth-child(6) {
+  right: 52em;
+  bottom: 32em;
+  height: 180px;
+  width: 180px;
+  z-index: 1;
+  background: linear-gradient(126deg, rgba(237,165,180,1) 57%, rgba(182,99,77,1) 84%);
 }
 
