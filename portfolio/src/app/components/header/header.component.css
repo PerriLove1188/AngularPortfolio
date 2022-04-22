@@ -1,11 +1,11 @@
 .menu-button {
   font-size: 25px;
-  color: #D49888;
+  color: #2b6777;
   opacity: 0.9;
   font-family: 'Source Code Pro', monospace;
-  font-weight: bolder;
+  font-weight: bold;
   display: inline-block;
-  position: relative;
+  /* position: relative; */
 }
 
 .menu-button:after {
@@ -16,7 +16,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #52ab98;
+  background-color: #2b6777;;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -25,21 +25,11 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 .menu-item {
   font-size: 18px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bolder;
-  background-color: #AD5467;
-  fill: #AD5467;
-}
-
-.socials {
-  margin-left: 5rem;
-  min-width: 10px;
-  margin-top: 5px;
-  font-size: 16px;
-  display: inline-block;
-  position: relative;
 }
 
 .socials:after {
@@ -50,7 +40,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #52ab98;
+  background-color: #2b6777;;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -60,30 +50,16 @@
   transform-origin: bottom left;
 }
 
-.header-container {
+.nav-links, .nav-social {
   display: flex;
-  height: 15vh;
+  width: 30rem;
 }
 
-.header-child {
-  position: fixed;
-  flex: 1;
+.nav-social {
+  margin-right: -12rem;
 }
 
-.header-child:first-child {
-  margin-right: 50%;
-  margin-bottom: 40px;
-  text-align: left;
+.nav-links, .nav-social li {
+  list-style: none;
+  font-size: 10px;
 }
-
-.header-child:nth-child(2) {
-  margin-left: 70%;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-
-
-
-  /* font-family: 'Source Code Pro', monospace;
-font-family: 'Whisper', cursive; */

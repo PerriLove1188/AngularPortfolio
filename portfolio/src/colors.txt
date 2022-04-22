@@ -1,0 +1,13 @@
+COLOR PALETTE:
+
+#2B6777;
+#c3d5c8;
+#64a695;
+#a6ece0;
+#3acf9b;
+#462b78;
+#c5cfd6;
+#636ba6;
+#a6a8ed;
+#3a5acf;
+
