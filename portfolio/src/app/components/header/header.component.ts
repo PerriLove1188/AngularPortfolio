@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { faLinkedin, faInstagram, faGithub, faAngular, faJava } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faInstagram, faGithub, faJava, faReact } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +10,8 @@ export class HeaderComponent implements OnInit {
   faLinkedin = faLinkedin;
   faInstagram = faInstagram;
   faGithub = faGithub;
-  faAngular = faAngular;
   faJava = faJava;
+  faReact = faReact;
 
   @Output() btnClick = new EventEmitter;
 

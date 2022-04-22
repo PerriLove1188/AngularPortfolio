@@ -14,19 +14,27 @@
       <!-- PROJECTS ITEMS -->
       <mat-menu class="menu" #projects="matMenu">
         <button class="menu-item" mat-menu-item disableRipple="true">
-          <fa-icon [icon]="faAngular" size="lg"></fa-icon>
-          ANGULAR 10
+          <fa-icon [icon]="faJava" size="lg"></fa-icon>
+          REST - Spring Boot 2.6
         </button>
 
         <button class="menu-item" mat-menu-item disableRipple="true">
           <fa-icon [icon]="faJava" size="lg"></fa-icon>
-          SPRING BOOT
+          Reactive - Spring Boot 2.6
+        </button>
+        <button class="menu-item" mat-menu-item disableRipple="true">
+          <fa-icon [icon]="faReact" size="lg"></fa-icon>
+          Next Up...ReactJS
         </button>
       </mat-menu>
       </li>
       <!-- ABOUT BUTTON -->
       <li>
-        <button class="menu-button" mat-button ripple disableRipple="true">ABOUT</button>
+        <a routerLink="/about">
+        <button class="menu-button" mat-button ripple disableRipple="true">
+          ABOUT
+        </button>
+      </a>
       </li>
       <!-- CONTACT BUTTON -->
       <li>
